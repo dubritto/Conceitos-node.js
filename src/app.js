@@ -10,15 +10,6 @@ app.use(cors());
 
 const repositories = [];
 
-// function like(request, response, next) {
-//   const { method, likes } = request;
-
-//   const logLabel = `[${method.toUpperCase()}] ${likes}`;
-
-//   return next();
-// }
-// app.use(logRequests);
-
 
 app.get("/repositories", (request, response) => {
   return response.json(repositories);
